@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eef2f7;
+    margin: 0;
+}
+
+
+/* Style the quiz card */
+#quiz-card {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Question text */
+#quiz-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Choices container */
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons for answers */
+#choices button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#choices button:hover,
+#choices button:focus {
+    background: #0056b3;
+    outline: none;
+}
+
+/* Progress and timer */
+#progress,
+#timer {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Retry button */
+#retry {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#retry:hover,
+#retry:focus {
+    background: #1e7e34;
+    outline: none;
+}
